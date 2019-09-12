@@ -1,5 +1,9 @@
 // Milan Fatschel
 // Path Finder Simulation
+// INSTRUCTIONS for GUI
+// KEY:
+// green = start, red = end, black = obstacle, white = open tiles, grey = closed tiles
+// left mouse click = toggle obstacle/open tile
 
 #include <iostream>
 #include <algorithm>
@@ -138,7 +142,7 @@ protected:
 			}
 
 
-			// Draw shortest path by A* in yellow if there is a path
+			// Highlight path by A* in green
 			if (m_nodeEnd != nullptr)
 			{
 				Node* scan = m_nodeEnd;
